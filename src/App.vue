@@ -1,21 +1,23 @@
 <template>
   <div id="app">
-    <Home/>
-    <Footer/>
+    <Header/>
+    <Home />
+    <Footer />
   </div>
 </template>
 
 <script>
+import Header from "./components/partials/Header.vue";
 import Footer from "./components/partials/Footer.vue";
 import Home from "./components/Home.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
+    Header,
     Footer,
-    Home
+    Home,
   },
-}
+};
 </script>
 
-<style>
-</style>
+<style></style>
