@@ -1,0 +1,153 @@
+/* Toggle between desktop and mobile headers */
+    #mobile-header {
+        display: none;
+        height: 500px;
+    }
+    #desktop-header {
+        display: block;
+    }
+
+@media (max-width: 769px){
+    /* .header-text-font-size {
+        font-size: 150px;
+    }    */
+
+    #mobile-header {
+        display: block;
+    }
+
+    #desktop-header {
+        display: none;
+    }
+
+}
+
+
+/* Desktop header */
+.desktop-header-img {
+    background-image: url("/images/Header.jpg");
+    min-height: 930px;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    z-index: 1;
+}
+
+.header-text {
+    top: 161px;
+    font-family: Teko;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    left: 100px;
+}
+
+.desktop-navigation {
+    border-bottom: 1px solid #000;
+    margin: 0 100px;
+}
+
+.desktop-header-logo {
+    width: 100px;
+    padding-top: 25px;
+}
+
+.hamburger-icon {
+    padding-bottom: 5px;
+    padding-left: 30px;
+}
+
+.desktop-menu-label {
+    font-family: Teko;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: extra-condensed;
+    font-style: normal;
+    line-height: 1.78;
+    letter-spacing: -1px;
+}
+
+.header-button {
+    width: 170px;
+    z-index: 2;
+    font-size: 1.6vh;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    padding: 8px 0;
+    right: 100px;
+    bottom: 80px;
+    border: none;
+    font-family: "Arial"
+}
+
+/* #mobile */
+      
+.mobile-navigation {
+    padding: 10px 20px;
+}
+
+.mobile-menu-bar-hamburger {
+    padding-left: 15px;
+}
+    
+.navbar-fixed-top {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 3;
+background-color: #fff;
+}
+
+#mobile-header {
+    position: relative !important;
+}
+    
+.header-logo-mobile {
+    width: 50px;
+}
+
+.mobile-header-img {
+    background-image: url("/images/Header.jpg");
+    min-height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: right;
+    z-index: 1;
+}
+
+.mobile-header-text {
+    font-size: 20vh;
+    padding-top: 100px; 
+    font-family: Teko;
+}
+
+.mobile-header-button {
+    z-index: 2;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 40px;
+    border: none;
+    margin-top: 20px;
+    width: calc(100% - 40px);
+    height: 50px;
+}
+
+      
+      
+      

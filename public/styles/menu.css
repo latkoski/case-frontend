@@ -1,0 +1,68 @@
+
+
+/* Top menu - Logo and close button */
+  @media(min-width: 770px){
+    .menu-logo {
+        width: 95px;
+        margin-top: -40px;
+    }
+
+    .menu-padding {
+        padding: 45px 100px;
+    }   
+    }
+
+
+@media (max-width: 769px){
+    .menu-logo {
+        padding-top: 15px;
+        width: 50px;
+    }
+
+    .menu-padding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }   
+}
+
+
+/* Body */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    transition: 0.4s;
+    opacity: 1;
+    z-index: 5;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    text-decoration: none;
+    font-size: 36px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: relative;
+    font-size: 5vh;
+    float: right;
+    font-family: 'Teko-Light'
+  }
