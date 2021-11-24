@@ -1,7 +1,41 @@
-
+  .overlay-content {
+    position: relative;
+    width: calc(100% - 40px);
+    text-align: center;
+    top: 110px;
+    margin: 0 20px; 
+  }
 
 /* Top menu - Logo and close button */
   @media(min-width: 770px){
+    .language-list {
+        list-style: none; 
+        padding: 0px;
+        margin-bottom: 0;
+    }
+
+    .social-list {
+        list-style: none;
+        padding: 0px;
+        bottom: 0;
+        color: white;
+        font-family: Arial;
+        font-family: Arial;
+        font-size: 12px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.58;
+        letter-spacing: normal;
+        background-color: #0e0e0e;
+        width: 90px;
+        height: 120px;
+        margin-bottom: 0;
+        margin-left: 100px;
+        z-index: 5;
+        padding-top: 30px;  
+    }
+
     .menu-logo {
         width: 95px;
         margin-top: -40px;
@@ -9,11 +43,79 @@
 
     .menu-padding {
         padding: 45px 100px;
-    }   
+    }
+    
+    .overlay-content {
+        position: relative;
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+        text-align: center;
+        top: 147px;
+        margin: 0; 
+        
+      }
+
+      .overlay a {
+        text-decoration: none;
+        font-size: 11.5vh;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+      }
+
+
+  
+    .menu-item:first-of-type:before {
+        content: '►';
+        padding: 5px 5px;
+        font-size: 50px;
+        position: absolute;
+        margin-left: -80px;
+    }
+
+    .language-container {
+        color: white; font-family: Arial; font-family: Arial;
+        font-size: 12px;
+        font-weight: bold;
+        font-stretch: normal;
+        top: 105px;
+        font-style: normal;
+        line-height: 1.58;
+        letter-spacing: normal; 
+        background-color: #0e0e0e; 
+        width: 100px; 
+        margin-left: 100px; 
+        z-index: 5;
+    }
+
+    .language-label {
+        color: #fff; 
+        opacity: 0.5
+    }
+
+      
+    .overlay .closebtn {
+        position: relative;
+        font-size: 3vh;
+        float: right;
+        font-family: 'Teko-Light'
+        
+    }
+
+
     }
 
 
 @media (max-width: 769px){
+    .language-container {
+        display: none;
+    }
+
+    .social-container {
+        display: none;
+    }
+
     .menu-logo {
         padding-top: 15px;
         width: 50px;
@@ -23,8 +125,36 @@
         padding-left: 20px;
         padding-right: 20px;
     }   
-}
 
+    .overlay a {
+        text-decoration: none;
+        font-size: 36px;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+      }
+      .social-list {
+          display: none;
+      }
+      
+        
+    .overlay .closebtn {
+        position: relative;
+        font-size: 3vh;
+        float: right;
+        font-family: 'Teko-Light';
+        padding-top: 5px;
+
+    }
+  
+    .menu-item:first-of-type:before {
+        content: '►';
+        padding: 5px 5px;
+        font-size: 24px;
+        position: absolute;
+        margin-left: -30px;
+    }
+}
 
 /* Body */
 .overlay {
@@ -33,36 +163,27 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #000;
+    background-color: #0e0e0e;
     overflow-x: hidden;
     transition: 0.4s;
     opacity: 1;
     z-index: 5;
   }
-  
-  .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .overlay a {
-    text-decoration: none;
-    font-size: 36px;
-    color: #fff;
-    display: block;
-    transition: 0.3s;
-  }
-  
+ 
   .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
   }
-  
-  .overlay .closebtn {
-    position: relative;
-    font-size: 5vh;
-    float: right;
-    font-family: 'Teko-Light'
+
+  .menu-item {
+    width: 100%; 
+    font-family: 'Teko'; 
+    font-size: 50px; 
+    text-align: right; 
+    line-height: 1;
+    padding-top: 5px;
   }
+
+  .menu-item:not(:first-child) {
+    border-top: 0.5px solid #a3a3a3;
+  }
+
