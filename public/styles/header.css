@@ -1,17 +1,15 @@
-/* Toggle between desktop and mobile headers */
-#mobile-header {
-  display: none;
-  height: 500px;
-}
-#desktop-header {
-  display: block;
+@media (min-width: 768px) {
+  /* Toggle between desktop and mobile headers */
+  #mobile-header {
+    display: none;
+    height: 500px;
+  }
+  #desktop-header {
+    display: block;
+  }
 }
 
-@media (max-width: 769px) {
-  /* .header-text-font-size {
-        font-size: 150px;
-    }    */
-
+@media (max-width: 768px) {
   #mobile-header {
     display: block;
   }

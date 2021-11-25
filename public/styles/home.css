@@ -32,11 +32,11 @@
   }
 
   .desktop-section {
-    display: none;
+    display: block;
   }
 
   .mobile-section {
-    display: block;
+    display: none;
   }
   .second-section-big-post {
     display: none;
