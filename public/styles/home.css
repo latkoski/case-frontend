@@ -1,0 +1,27 @@
+@media (max-width: 769px) {
+  .first-section-row {
+    padding-top: 70px;
+  }
+
+  .desktop-section {
+      display: none;
+  }
+
+  .mobile-section {
+      display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .first-section-row {
+    padding-top: 148px;
+  }
+
+  .desktop-section {
+      display: block;
+  }
+
+  .mobile-section {
+      display: none;
+  }
+}

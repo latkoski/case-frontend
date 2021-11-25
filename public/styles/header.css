@@ -24,12 +24,13 @@
 /* Desktop header */
 .desktop-header-img {
   background-image: url("/images/Header.jpg");
-  min-height: 930px;
+  min-height: 960px;
   width: 100%;
   background-position: top;
   background-size: cover;
   z-index: 1;
   border: 20px solid #fff;
+  border-bottom: none;
 }
 
 .top-13 {
@@ -87,9 +88,9 @@
   text-align: center;
   color: #fff;
   background-color: #000;
-  padding: 8px 0;
+  padding: 10px 0;
   right: 100px;
-  bottom: 30px;
+  bottom: 80px;
   border: none;
   font-family: "Arial";
 }
