@@ -32,30 +32,37 @@
   border: 20px solid #fff;
 }
 
+.top-13 {
+  top: 13px;
+}
+
 .header-text {
-  top: 161px;
+  top: 192px;
   font-family: Teko;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1;
   letter-spacing: normal;
-  left: 100px;
+  left: 95px;
+  font-size: 28vw;
 }
 
 .desktop-navigation {
   border-bottom: 1px solid #000;
   margin: 0 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .desktop-header-logo {
   width: 100px;
-  padding-top: 25px;
+  padding-top: 13px;
 }
 
 .hamburger-icon {
   padding-bottom: 5px;
-  padding-left: 30px;
+  padding-left: 27px;
 }
 
 .desktop-menu-label {
@@ -82,7 +89,7 @@
   background-color: #000;
   padding: 8px 0;
   right: 100px;
-  bottom: 80px;
+  bottom: 30px;
   border: none;
   font-family: "Arial";
 }
@@ -90,11 +97,11 @@
 /* #mobile */
 
 .mobile-navigation {
-  padding: 10px 20px;
+  padding: 10px 20px 15px;
 }
 
 .mobile-menu-bar-hamburger {
-  padding-left: 15px;
+  padding-left: 55px;
 }
 
 .navbar-fixed-top {
@@ -115,18 +122,26 @@
 }
 
 .mobile-header-img {
-  background-image: url("/images/Header.jpg");
-  min-height: 100%;
+  background-image: url("/images/florensis.png");
+  height: 320px;
   width: 100%;
   background-size: cover;
-  background-position: right;
+  background-position: conter;
+  /* background-repeat: no-repeat; */
   z-index: 1;
+  top: 50px;
+}
+
+.mobile-menu-label {
+  font-size: 2.6vh;
+  top: 8px;
 }
 
 .mobile-header-text {
   font-size: 20vh;
-  padding-top: 100px;
+  padding-top: 48px;
   font-family: Teko;
+  margin-left: -15px;
 }
 
 .mobile-header-button {
@@ -142,7 +157,7 @@
   background-color: #000;
   padding: 10px 40px;
   border: none;
-  margin-top: 20px;
+  margin-top: 70px;
   width: calc(100% - 40px);
   height: 50px;
 }

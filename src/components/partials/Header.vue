@@ -3,7 +3,7 @@
     <!-- Desktop/Tablet >= 762px-->
     <div id="desktop-header" class="desktop-header-img position-relative">
       <div class="overflow-hidden desktop-navigation" style="z-index: 6">
-        <div class="float-left position-relative">
+        <div class="float-left position-relative top-13">
           <img src="/icons/icon-dept.svg" class="desktop-header-logo" />
         </div>
         <div
@@ -19,8 +19,8 @@
           />
         </div>
         <div
-          class="position-absolute header-text header-text-font-size"
-          style="font-size: 27vw"
+          class="position-absolute header-text "
+          
         >
           {{ headerText }}
         </div>
@@ -41,7 +41,9 @@
             </div>
             <div class="float-right d-inline" @click="menuToggle = true">
               <div class="d-inline desktop-menu-label">
+                <span class="position-absolute mobile-menu-label">
                 MENU
+                </span>
                 <img
                   class="d-inline mobile-menu-bar-hamburger"
                   src="/icons/icon-menu.svg"
