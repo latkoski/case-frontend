@@ -1,0 +1,58 @@
+.no-border {
+  border: none;
+}
+
+.post-subtitle {
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #939393;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.post-view {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  color: #1a18f7;
+}
+
+.post-title {
+  font-family: Teko;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.07;
+  letter-spacing: normal;
+  color: #272727;
+  padding-bottom: 12px;
+}
+
+@media (max-width: 769px) {
+  .post-title {
+    width: 300px;
+    font-family: Teko;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.07;
+    letter-spacing: normal;
+    color: #272727;
+    padding-bottom: 12px;
+  }
+
+  .post-view {
+    display: none;
+  }
+}

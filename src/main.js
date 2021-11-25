@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "../public/styles/main.css";
 import "../public/styles/header.css";
 import "../public/styles/menu.css";
+import "../public/styles/post.css";
 
 Vue.use(BootstrapVue);
 
