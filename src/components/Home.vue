@@ -107,15 +107,18 @@
         <Post />
       </div>
     </div>
+    <Clients />
   </div>
 </template>
 
 <script>
 import Post from "./Post.vue";
+import Clients from "./Clients.vue";
 
 export default {
   components: {
     Post,
+    Clients,
   },
 
   mounted() {},
