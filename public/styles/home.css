@@ -4,12 +4,52 @@
   }
 
   .desktop-section {
-      display: none;
+    display: none;
   }
 
   .mobile-section {
-      display: block;
+    display: block;
   }
+  .second-section-big-post {
+    display: none;
+  }
+  .app-container {
+    margin: 0 20px;
+  }
+
+  .post-padding {
+    padding-bottom: 37px;
+  }
+
+  .testimonial {
+    font-family: Teko;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #272727;
+    padding-top: 40px;
+  }
+
+  .sub-testimonial {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.31;
+    letter-spacing: normal;
+  }
+
+  .third-section-row {
+    padding-top: 60px;
+  }
+}
+
+.solid-gray {
+  color: solid #ddd;
 }
 
 @media (min-width: 769px) {
@@ -17,11 +57,52 @@
     padding-top: 148px;
   }
 
+  .second-section-row {
+    padding-top: 0;
+  }
+
+  .third-section-row {
+    padding-top: 80px;
+  }
+
   .desktop-section {
-      display: block;
+    display: block;
   }
 
   .mobile-section {
-      display: none;
+    display: none;
+  }
+  .second-section-big-post {
+    display: block;
+  }
+  .app-container {
+    margin: 0 120px;
+  }
+  .post-padding {
+    padding-bottom: 80px;
+  }
+
+  .testimonial {
+    margin: 0 0 18px;
+    font-family: Teko;
+    font-size: 4.05vh;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.28;
+    letter-spacing: normal;
+    /* width: 760px; */
+    /* margin-left: 190px; */
+    padding-top: 80px;
+  }
+
+  .sub-testimonial {
+    font-family: Arial;
+    font-size: 1.4vh;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.31;
+    letter-spacing: normal;
   }
 }

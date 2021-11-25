@@ -54,6 +54,7 @@
   margin: 0 100px;
   padding-top: 5px;
   padding-bottom: 5px;
+  z-index: 6;
 }
 
 .desktop-header-logo {
@@ -79,7 +80,7 @@
 .header-button {
   width: 170px;
   z-index: 2;
-  font-size: 1.6vh;
+  font-size: 15px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -139,7 +140,7 @@
 }
 
 .mobile-header-text {
-  font-size: 20vh;
+  font-size: 26vh;
   padding-top: 48px;
   font-family: Teko;
   margin-left: -15px;

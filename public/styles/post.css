@@ -41,7 +41,6 @@
 }
 
 @media (max-width: 769px) {
-
   .mobile-border {
     border-bottom: 1px solid #ddd;
     border-radius: 0;
@@ -64,18 +63,16 @@
     padding-bottom: 12px;
   }
 
-
   .no-image-font-size {
-    font-size: 3vh;
+    font-size: 3.5vh;
   }
-  
 
   .post-view {
     display: none;
   }
 }
 
-@media (min-width: 769px){
+@media (min-width: 769px) {
   .desktop-padding {
     margin-left: 20px;
     height: 40%;
@@ -88,7 +85,6 @@
     border-radius: 0;
   }
 
-
   .desktop-no-image {
     padding-left: 20px;
     height: 40%;
@@ -98,4 +94,3 @@
     width: 800px;
   }
 }
-
