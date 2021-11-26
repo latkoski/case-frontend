@@ -43,7 +43,6 @@
       <a href="#" class="menu-item">STORIES</a>
       <a href="#" class="menu-item">VACATURES</a>
       <a href="#" class="menu-item">EVENTS</a>
-      <a href="#" class="menu-item">VACATURES</a>
     </div>
   </div>
 </template>

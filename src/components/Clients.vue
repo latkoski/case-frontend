@@ -7,8 +7,8 @@
       challenge and inspire them to reach for the stars.</span
     >
     <div
-      class="row"
-      style="padding: 0px 15%; display: flex; align-items: center"
+      class="row logos-grid"
+      style="padding: 0 15%; display: flex; align-items: center"
     >
       <div class="col-xs-6 col-sm-3 client-logo">
         <img class="client-logo-img" src="/logos/nivea.jpg" alt="Nivea" />

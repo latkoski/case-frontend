@@ -1,14 +1,54 @@
-input {
-  border: 0;
-  outline: 0;
-  background: transparent;
-  border-bottom: 1px solid #0e0e0e;
+input:focus {
+  border-bottom: 1px solid #000;
+}
+
+textarea:focus {
+  border-bottom: 1px solid #000;
+}
+
+/* @media (min-width: 576px){
+  Rules
+} */
+
+@media (max-width: 991.98px) {
+  input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #dddddd;
+    z-index: 4;
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #dddddd;
+    z-index: 4;
+    width: 90%;
+    display: block;
+  }
 }
 
 textarea {
   border: 0;
   outline: 0;
   background: transparent;
-  border-bottom: 1px solid #0e0e0e;
+  border-bottom: 1px solid #dddddd;
   resize: none;
+  z-index: 4;
+  width: 100%;
+  display: block;
+  padding-top: 32px;
+  resize: none;
+}
+
+@media (max-width: 575.98px) {
+  .input-field {
+    margin-bottom: -28px;
+  }
 }

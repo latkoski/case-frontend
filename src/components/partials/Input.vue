@@ -1,12 +1,12 @@
 <template>
   <section>
-    <span class="position-absolute" style="padding-bottom: 10px">{{
+    <span class="position-absolute" style="padding-bottom: 10px; text-weight: 700">{{
       label
     }}</span>
     <textarea
       v-if="type == 'textarea'"
       style="padding-top: 32px; resize: none"
-      class="position-absolute"
+      class="position-relative w-100"
       rows="4"
       maxlength="100"
       :value="value"
@@ -15,7 +15,7 @@
     <input
       v-else
       style="padding-top: 32px"
-      class="position-absolute"
+      class="position-relative"
       :value="value"
       @input="$emit('input', $event.target.value)"
       type="text"
@@ -24,8 +24,8 @@
     <span
       :class="
         type == 'textarea'
-          ? 'pt-165 position-absolute error-message'
-          : 'pt-75 position-absolute error-message'
+          ? 'pt-165 position-relative error-message'
+          : 'pt-75 position-relative error-message'
       "
       >This field is required</span
     >
