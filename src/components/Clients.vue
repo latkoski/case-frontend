@@ -8,7 +8,7 @@
     >
     <div
       class="row"
-      style="padding: 0px 10%; display: flex; align-items: center"
+      style="padding: 0px 15%; display: flex; align-items: center"
     >
       <div class="col-xs-6 col-sm-3 client-logo">
         <img class="client-logo-img" src="/logos/nivea.jpg" alt="Nivea" />

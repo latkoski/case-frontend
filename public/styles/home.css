@@ -1,7 +1,7 @@
 .clients {
-  background-color: #fefefe;
-  text-align: center;
+  padding-bottom: 30px;
 }
+
 .testimonial-text {
   font-family: Teko;
   font-size: 60px;
@@ -13,6 +13,10 @@
   text-align: center;
   padding-top: 80px;
   padding-bottom: 18px;
+}
+
+.client-logo {
+  text-align: center;
 }
 
 .clients-container {
@@ -114,7 +118,7 @@
   }
 
   .clients-container {
-    padding: 0px 27% 125px;
+    
   }
   .desktop-only {
     display: block;
@@ -126,6 +130,13 @@
 }
 
 @media (min-width: 769px) {
+  .clients {
+    background-color: #f3f6f6;
+    text-align: center;
+    margin: 0 -120px;
+    margin-right: -100px;
+  }
+
   .first-section-row {
     padding-top: 148px;
   }

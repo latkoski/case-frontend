@@ -108,17 +108,20 @@
       </div>
     </div>
     <Clients />
+    <Contact />
   </div>
 </template>
 
 <script>
 import Post from "./Post.vue";
 import Clients from "./Clients.vue";
+import Contact from "./Contact.vue";
 
 export default {
   components: {
     Post,
     Clients,
+    Contact,
   },
 
   mounted() {},
