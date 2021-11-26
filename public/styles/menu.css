@@ -54,6 +54,8 @@
   .menu-logo {
     width: 95px;
     margin-top: -40px;
+    filter: invert(99%) sepia(0%) saturate(2%) hue-rotate(147deg)
+      brightness(108%) contrast(101%);
   }
 
   .menu-padding {
@@ -146,6 +148,8 @@
     width: 50px;
     top: 3px;
     padding-top: 18px;
+    filter: invert(99%) sepia(0%) saturate(2%) hue-rotate(147deg)
+      brightness(108%) contrast(101%);
   }
 
   .menu-padding {

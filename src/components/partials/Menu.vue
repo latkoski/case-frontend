@@ -24,7 +24,7 @@
     <div class="position-absolute w-100 menu-padding">
       <img
         class="position-relative float-left menu-logo"
-        src="/icons/logo-white.svg"
+        src="/icons/icon-dept.svg"
         alt="DEPT"
       />
       <a
