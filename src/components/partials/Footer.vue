@@ -5,17 +5,39 @@
         <img src="/icons/icon-dept.svg" class="footer-logo-dept" alt="Dept" />
       </div>
 
-      <div class="categories d-inline">
-        <ul class="d-inline">
-          <li class="footer-category">WORK</li>
-          <li class="footer-category">SERVICE</li>
-          <li class="footer-category">STORIES</li>
+      <div class="categories">
+        <ul class="d-inline categories-list">
+          <li class="footer-category">
+            WORK
+
+            <img
+              class="social-media-icon-mobile position-relative float-right"
+              src="/icons/icon-fb.svg"
+            />
+          </li>
+          <li class="footer-category">
+            SERVICE
+
+            <img
+              class="social-media-icon-mobile position-relative float-right"
+              src="/icons/icon-twitter.svg"
+            />
+          </li>
+          <li class="footer-category">
+            STORIES
+            <img
+              class="social-media-icon-mobile position-relative float-right"
+              src="/icons/icon-instagram.svg"
+            />
+          </li>
           <li class="footer-category">ABOUT</li>
           <li class="footer-category">CAREERS</li>
           <li class="footer-category">CONTACT</li>
         </ul>
       </div>
-      <div class="footer-logo position-relative d-inline float-right">
+      <div
+        class="footer-logo position-relative float-right social-media-container"
+      >
         <a href="#" class="no-link text-decoration-none">
           <img class="social-media-icon" src="/icons/icon-fb.svg" />
         </a>
@@ -37,7 +59,7 @@
             </tr>
           </table>
         </div>
-        <div class="absolute float-right">© 2021 Dept Agency</div>
+        <div class="float-right copyright">© 2021 Dept Agency</div>
       </div>
     </div>
   </div>
