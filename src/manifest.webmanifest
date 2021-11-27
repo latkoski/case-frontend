@@ -1,0 +1,12 @@
+{
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "display": "browser",
+    "scope": "/",
+    "start_url": "localhost:8080",
+    "name": "Dept Case Frontend Developers",
+    "short_name": "Dept FE",
+    "icons": {
+        "name": "logo-white.svg"
+    }
+}
