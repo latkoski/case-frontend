@@ -14,3 +14,17 @@
 .h-600 {
   height: 600px;
 }
+
+.pt-68 {
+  padding-top: 68px;
+}
+
+.pt-145 {
+  padding-top: 145px;
+}
+
+@media (max-width: 300px) {
+  .app-container {
+    padding: 0
+  }
+}

@@ -6,9 +6,16 @@ textarea:focus {
   border-bottom: 1px solid #000;
 }
 
-/* @media (min-width: 576px){
-  Rules
-} */
+.error-message {
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ff2929;
+}
 
 @media (max-width: 991.98px) {
   input {
@@ -19,6 +26,7 @@ textarea:focus {
     z-index: 4;
     width: 100%;
     display: block;
+    padding-top: 32px;
   }
 }
 
@@ -31,6 +39,7 @@ textarea:focus {
     z-index: 4;
     width: 90%;
     display: block;
+    padding-top: 32px;
   }
 }
 
@@ -45,6 +54,12 @@ textarea {
   display: block;
   padding-top: 32px;
   resize: none;
+  padding-top: 32px;
+}
+
+.input-label {
+  padding-bottom: 10px;
+  font-weight: 700;
 }
 
 @media (max-width: 575.98px) {

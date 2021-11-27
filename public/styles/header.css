@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 760px) {
   /* Toggle between desktop and mobile headers */
   #mobile-header {
     display: none;
@@ -9,7 +9,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   #mobile-header {
     display: block;
   }
@@ -127,21 +127,18 @@
   width: 100%;
   background-size: cover;
   background-position: conter;
-  /* background-repeat: no-repeat; */
   z-index: 1;
   top: 50px;
 }
 
 .mobile-menu-label {
   font-size: 2.6vh;
-  top: 8px;
 }
 
 .mobile-header-text {
-  font-size: 26vh;
+  font-size: 16vh;
   padding-top: 48px;
   font-family: Teko;
-  margin-left: -15px;
 }
 
 .mobile-header-button {
