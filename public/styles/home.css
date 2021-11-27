@@ -356,3 +356,130 @@
     margin-left: 0px;
   }
 }
+
+@media (min-width: 650px) and (max-width: 768px) {
+  .desktop-section {
+    width: 95%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .app-container {
+    padding: 0 15%;
+  }
+  .desktop-navigation {
+    border-bottom: 1px solid #000;
+    margin: 0 21.5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    z-index: 6;
+  }
+  .header-text {
+    top: 192px;
+    font-family: Teko;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    left: 21.5%;
+    font-size: 28vw;
+  }
+  .header-button {
+    width: 170px;
+    z-index: 2;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 0;
+    right: 21.5%;
+    bottom: 80px;
+    border: none;
+    font-family: "Arial";
+  }
+  .menu-padding {
+    padding: 45px 21.5%;
+  }
+  .language-container {
+    color: white;
+    font-family: Arial;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    top: 100px;
+    font-style: normal;
+    line-height: 1.58;
+    letter-spacing: normal;
+    background-color: #0e0e0e;
+    width: 100px;
+    margin-left: 21.5%;
+    z-index: 5;
+  }
+
+  .overlay-content {
+    position: relative;
+    width: 100%;
+    padding-left: 21.5%;
+    padding-right: 21.5%;
+    text-align: center;
+    top: 147px;
+    margin: 0;
+  }
+
+  .social-list {
+    list-style: none;
+    padding: 0px;
+    bottom: 0;
+    color: white;
+    font-family: Arial;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.58;
+    letter-spacing: normal;
+    background-color: #0e0e0e;
+    width: 90px;
+    height: 120px;
+    margin-bottom: 0;
+    margin-left: 21.5%;
+    z-index: 5;
+    padding-top: 30px;
+  }
+
+  .footer-container {
+    background-color: #0e0e0e;
+    height: 340px;
+    padding: 105px 120px 0px;
+    padding-right: 120px;
+    margin-right: 120px;
+    padding-left: 21.5%;
+  }
+
+  .header-text {
+    top: 20.5%;
+    font-family: Teko;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    left: 21.5%;
+    font-size: 20vw;
+  }
+
+ 
+}
+
+.success-label {
+  color: #408140;
+  padding-top: 50px;
+}

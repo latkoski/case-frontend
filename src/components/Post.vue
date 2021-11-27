@@ -1,5 +1,5 @@
 <template>
-  <div
+  <div v-if="!!content"
     :class="
       showImage
         ? 'card no-border'
@@ -9,14 +9,14 @@
     <img
       v-if="showImage"
       class="card-img-top"
-      src="/images/florensis.png"
-      alt="Card image cap"
+      :src="content.img"
+      :alt="content.title"
     />
 
     <a href="#" class="pt-10 text-decoration-none">
-      <div class="post-subtitle">BOL.COM</div>
+      <div class="post-subtitle">{{ content.subtitle }}</div>
       <div :class="showImage ? 'post-title' : 'post-title  no-image-font-size'">
-        A summer island in the Netherlands
+        {{ content.title }}
       </div>
       <a class="post-view text-decoration-none">► VIEW CASE</a>
     </a>
@@ -35,6 +35,9 @@ export default {
       type: Boolean,
       default: false,
       required: false,
+    },
+    content: {
+      type: Object,
     },
   },
 };

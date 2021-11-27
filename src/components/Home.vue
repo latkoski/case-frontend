@@ -1,56 +1,74 @@
 <template>
   <div class="app-container">
     <div class="row first-section-row">
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding">
-        <Post />
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding">
-        <Post />
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding">
-        <Post />
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding">
-        <Post />
+      <div
+        class="col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding"
+        v-for="(post, index) in firstSectionPosts"
+        :key="index"
+      >
+        <Post :content="post" />
       </div>
     </div>
     <!-- First section -->
     <div class="desktop-section">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 post-padding">
-          <Post :bigPost="true" />
+          <Post
+            :content="secondSectionBigPost"
+            :bigPost="true"
+            :showImage="true"
+          />
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 post-padding">
-          <Post :showImage="false" />
-          <Post :showImage="false" />
+          <Post
+            v-for="(post, index) in secondSectionSmallPosts"
+            :content="post"
+            :key="index"
+            :showImage="false"
+          />
         </div>
       </div>
     </div>
     <div class="mobile-section">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 post-padding">
-          <Post :showImage="false" />
+          <Post
+            v-for="(post, index) in secondSectionSmallPosts"
+            :key="index"
+            :content="post"
+            :showImage="false"
+          />
           <Post :showImage="false" />
         </div>
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 post-padding">
-          <Post :bigPost="true" />
+          <Post
+            :content="secondSectionBigPost"
+            :bigPost="true"
+            :showImage="true"
+          />
         </div>
       </div>
     </div>
+
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding">
-        <Post />
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding">
-        <Post />
+      <div
+        v-for="(post, index) in thirdSectionPosts"
+        :key="index"
+        class="col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding"
+      >
+        <Post :content="post" />
       </div>
     </div>
     <!-- Second section -->
     <div class="mobile-section">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 post-padding">
-          <Post :showImage="false" />
-          <Post :showImage="false" />
+          <Post
+            v-for="(post, index) in fourthSectionSmallPosts"
+            :content="post"
+            :key="index"
+            :showImage="false"
+          />
         </div>
         <div
           class="
@@ -59,35 +77,43 @@
             second-section-big-post
           "
         >
-          <Post :bigPost="true" />
+          <Post
+            :content="fourthSectionBigPost"
+            :bigPost="true"
+            :showImage="false"
+          />
         </div>
       </div>
     </div>
     <div class="desktop-section">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 post-padding">
-          <Post :showImage="false" />
-          <Post :showImage="false" />
+          <Post
+            v-for="(post, index) in fourthSectionSmallPosts"
+            :content="post"
+            :key="index"
+            :showImage="false"
+          />
         </div>
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 post-padding">
-          <Post :bigPost="true" />
+          <Post
+            :content="fourthSectionBigPost"
+            :bigPost="true"
+            :showImage="true"
+          />
         </div>
       </div>
     </div>
     <div class="row second-section-row">
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding">
-        <Post />
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding">
-        <Post />
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding">
-        <Post />
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding">
-        <Post />
+      <div
+        class="col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding"
+        v-for="(post, index) in fifthSectionPosts"
+        :key="index"
+      >
+        <Post :content="post" />
       </div>
     </div>
+
     <hr class="solid-gray" />
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 offset-lg-2">
@@ -100,11 +126,12 @@
       </div>
     </div>
     <div class="row third-section-row">
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding">
-        <Post />
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding">
-        <Post />
+      <div
+        class="col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding"
+        v-for="(post, index) in sixthSectionPosts"
+        :key="index"
+      >
+        <Post :content="post" />
       </div>
     </div>
     <Clients />
@@ -124,7 +151,41 @@ export default {
     Contact,
   },
 
+  props: {
+    posts: {
+      type: Array,
+      required: true,
+    },
+  },
+
   mounted() {},
+
+  computed: {
+    firstSectionPosts: function () {
+      return this.posts.filter((post) => post.section == 1);
+    },
+    secondSectionBigPost: function () {
+      return this.posts.find((post) => post.section == 2 && post.big == true);
+    },
+    secondSectionSmallPosts: function () {
+      return this.posts.filter((post) => post.section == 2 && !post.big);
+    },
+    thirdSectionPosts: function () {
+      return this.posts.filter((post) => post.section == 3);
+    },
+    fourthSectionBigPost: function () {
+      return this.posts.find((post) => post.section == 4 && post.big == true);
+    },
+    fourthSectionSmallPosts: function () {
+      return this.posts.filter((post) => post.section == 4 && !post.big);
+    },
+    fifthSectionPosts: function () {
+      return this.posts.filter((post) => post.section == 5);
+    },
+    sixthSectionPosts: function () {
+      return this.posts.filter((post) => post.section == 6);
+    },
+  },
 };
 </script>
 

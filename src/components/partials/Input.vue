@@ -18,12 +18,13 @@
       type="text"
     />
     <span
+      v-if="errorMessage != ''"
       :class="
         type == 'textarea'
           ? 'pt-145 position-relative error-message'
           : 'pt-68 position-relative error-message'
       "
-      >This field is required</span
+      >{{ errorMessage }}</span
     >
   </section>
 </template>
@@ -43,6 +44,10 @@ export default {
       type: String,
       required: false,
       default: "text",
+    },
+    errorMessage: {
+      type: String,
+      required: false,
     },
   },
 };

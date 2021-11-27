@@ -1,8 +1,13 @@
 import Vue from "vue";
 import App from "./App.vue";
-import { BootstrapVue } from "bootstrap-vue";
+
+// BOOTSTRAP
 import "bootstrap/dist/css/bootstrap.css";
-// import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+// AXIOS
+import VueAxios from "vue-axios";
+import axios from "axios";
+
 import "../public/styles/main.css";
 import "../public/styles/header.css";
 import "../public/styles/menu.css";
@@ -10,7 +15,7 @@ import "../public/styles/post.css";
 import "../public/styles/home.css";
 import "../public/styles/footer.css";
 
-Vue.use(BootstrapVue);
+Vue.use(VueAxios, axios);
 
 Vue.config.productionTip = false;
 

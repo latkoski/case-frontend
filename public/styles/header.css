@@ -21,7 +21,7 @@
 
 /* Desktop header */
 .desktop-header-img {
-  background-image: url("/images/Header.jpg");
+  background-image: url("/images/Header.webp");
   min-height: 960px;
   width: 100%;
   background-position: top;
@@ -126,7 +126,7 @@
   height: 320px;
   width: 100%;
   background-size: cover;
-  background-position: conter;
+  background-position: center;
   z-index: 1;
   top: 50px;
 }
