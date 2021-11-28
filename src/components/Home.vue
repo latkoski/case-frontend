@@ -1,9 +1,21 @@
 <template>
   <div class="app-container">
     <div class="row first-section-row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="position-relative float-right dropdown-container">
+          Show me
+          <Dropdown v-model="workFilter" name="work" :options="work" />
+          in
+          <Dropdown
+            v-model="industryFilter"
+            name="industry"
+            :options="industries"
+          />
+        </div>
+      </div>
       <div
         class="col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding"
-        v-for="(post, index) in firstSectionPosts"
+        v-for="(post, index) in filterFirstSectionPosts"
         :key="index"
       >
         <Post :content="post" />
@@ -143,12 +155,50 @@
 import Post from "./Post.vue";
 import Clients from "./Clients.vue";
 import Contact from "./Contact.vue";
+import Dropdown from "./partials/Dropdown.vue";
 
 export default {
   components: {
     Post,
     Clients,
     Contact,
+    Dropdown,
+  },
+
+  data() {
+    return {
+      work: [
+        {
+          label: "all work",
+          value: "all",
+        },
+        {
+          label: "top rated",
+          value: "top",
+        },
+        {
+          label: "hot now",
+          value: "hot",
+        },
+      ],
+      industries: [
+        {
+          label: "all industries",
+          value: "all",
+        },
+        {
+          label: "tech",
+          value: "tech",
+        },
+
+        {
+          label: "eco",
+          value: "eco",
+        },
+      ],
+      workFilter: "all",
+      industryFilter: "all",
+    };
   },
 
   props: {
@@ -160,9 +210,37 @@ export default {
 
   mounted() {},
 
+  methods: {
+    // applyFilters(val) {
+    //   console.log("work filter", val);
+    // },
+  },
+
   computed: {
-    firstSectionPosts: function () {
-      return this.posts.filter((post) => post.section == 1);
+    filterFirstSectionPosts: function () {
+      let posts = [];
+      if (this.workFilter == "all" && this.industryFilter == "all") {
+        posts = this.posts.filter((post) => post.section == 1);
+      } else {
+        if (this.workFilter == "all" && this.industryFilter != "all") {
+          posts = this.posts.filter(
+            (post) => post.section == 1 && post.industry == this.industryFilter
+          );
+        } else if (this.workFilter != "all" && this.industryFilter == "all") {
+          posts = this.posts.filter(
+            (post) => post.section == 1 && post.work == this.workFilter
+          );
+        } else {
+          posts = this.posts.filter(
+            (post) =>
+              post.section == 1 &&
+              post.industry == this.industryFilter &&
+              post.work == this.workFilter
+          );
+        }
+      }
+
+      return posts;
     },
     secondSectionBigPost: function () {
       return this.posts.find((post) => post.section == 2 && post.big == true);
@@ -184,6 +262,24 @@ export default {
     },
     sixthSectionPosts: function () {
       return this.posts.filter((post) => post.section == 6);
+    },
+  },
+
+  watch: {
+    workFilter(val) {
+      window.history.pushState(
+        val,
+        "",
+        "filters?work=" + this.workFilter + "&industry=" + this.industryFilter
+      );
+    },
+
+    industryFilter(val) {
+      window.history.pushState(
+        val,
+        "",
+        "filters?work=" + this.workFilter + "&industry=" + this.industryFilter
+      );
     },
   },
 };

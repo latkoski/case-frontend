@@ -14,8 +14,6 @@ import "../public/styles/menu.css";
 import "../public/styles/post.css";
 import "../public/styles/home.css";
 import "../public/styles/footer.css";
-import "./registerServiceWorker";
-
 Vue.use(VueAxios, axios);
 
 Vue.config.productionTip = false;

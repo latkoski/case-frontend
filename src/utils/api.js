@@ -1,1 +1,2 @@
-export const POSTS_URL = "https://mocki.io/v1/c86da702-fbdf-430f-97b4-853d7996b024";
+export const POSTS_URL =
+  "https://mocki.io/v1/028225d3-bb44-4da9-adad-c5fed17b5df1";
