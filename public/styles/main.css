@@ -56,6 +56,11 @@ a:-webkit-any-link {
 
 @media (max-width: 768px) {
   .buttons-container {
-    display: none;
+    display: none !important;
   }
+}
+
+.margin-auto {
+  margin: 0 auto !important;
+  padding-bottom: 50px;
 }

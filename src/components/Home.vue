@@ -21,7 +21,7 @@
         </div>
       </div>
       <div
-        :class="displayType == 'grid' ? 'col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding' : 'col-xs-12 col-sm-12 col-md-12 col-lg-12'"
+        :class="displayType == 'grid' ? 'col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding' : 'col-xs-12 col-sm-8 col-md-8 col-lg-8 margin-auto'"
         v-for="(post, index) in filterFirstSectionPosts"
         :key="index"
       >
