@@ -423,6 +423,16 @@
     z-index: 5;
   }
 
+  .clients {
+    background-color: #f3f6f6;
+    text-align: center;
+    margin: 0 -120px;
+    /* margin-right: -100px; */
+    margin-left: -100%;
+    padding-left: 75%;
+    margin-right: -35%;
+  }
+
   .overlay-content {
     position: relative;
     width: 100%;
@@ -475,8 +485,6 @@
     left: 21.5%;
     font-size: 20vw;
   }
-
- 
 }
 
 .success-label {

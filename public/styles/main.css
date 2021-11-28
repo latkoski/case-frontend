@@ -27,8 +27,20 @@
   padding-bottom: 60px;
 }
 
+a:-webkit-any-link {
+  text-decoration: none;
+}
+.color-white {
+  color: #fff;
+}
+
+.color-white:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 @media (max-width: 300px) {
   .app-container {
-    padding: 0
+    padding: 0;
   }
 }

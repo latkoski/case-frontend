@@ -8,7 +8,7 @@
       <div class="categories">
         <ul class="d-inline categories-list">
           <li class="footer-category">
-            WORK
+            <a href="#" class="color-white">WORK</a>
 
             <img
               class="social-media-icon-mobile position-relative float-right"
@@ -16,7 +16,7 @@
             />
           </li>
           <li class="footer-category">
-            SERVICE
+            <a href="#" class="color-white">SERVICE</a>
 
             <img
               class="social-media-icon-mobile position-relative float-right"
@@ -24,15 +24,15 @@
             />
           </li>
           <li class="footer-category">
-            STORIES
+            <a href="#" class="color-white">STORIES</a>
             <img
               class="social-media-icon-mobile position-relative float-right"
               src="/icons/icon-instagram.svg"
             />
           </li>
-          <li class="footer-category">ABOUT</li>
-          <li class="footer-category">CAREERS</li>
-          <li class="footer-category">CONTACT</li>
+          <li class="footer-category"><a href="#" class="color-white">ABOUT</a></li>
+          <li class="footer-category"><a href="#" class="color-white">CAREERS</a></li>
+          <li class="footer-category"><a href="#" class="color-white">CONTACT</a></li>
         </ul>
       </div>
       <div
