@@ -1,7 +1,8 @@
 <template>
   <section>
-    <span class="position-absolute input-label">{{ label }}</span>
+    <label class="position-absolute input-label" :for="id">{{ label }}</label>
     <textarea
+      :id="label"
       v-if="type == 'textarea'"
       style="resize: none"
       class="position-relative w-100"
@@ -11,6 +12,7 @@
       @input="$emit('input', $event.target.value)"
     ></textarea>
     <input
+      :id="label"
       v-else
       class="position-relative"
       :value="value"

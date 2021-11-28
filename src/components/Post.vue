@@ -10,13 +10,13 @@
       v-if="showImage"
       class="card-img-top"
       :src="content.img"
-      :alt="content.title"
+      :alt="content.subtitle"
     />
 
     <a href="#" class="pt-10 text-decoration-none">
       <div class="post-subtitle">{{ content.subtitle }}</div>
       <div :class="showImage ? 'post-title' : 'post-title  no-image-font-size'">
-        {{ content.title }}
+        <h3>{{ content.title }}</h3>
       </div>
       <a class="post-view text-decoration-none">► VIEW CASE</a>
     </a>
