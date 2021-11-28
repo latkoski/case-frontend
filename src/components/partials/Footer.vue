@@ -1,6 +1,6 @@
 <template>
   <div class="position-relative footer-container">
-    <div class="w-100">
+    <div class="w-100 menu-container-footer">
       <div class="footer-logo position-relative d-inline float-left">
         <img src="/icons/icon-dept.svg" class="footer-logo-dept" alt="Dept" />
       </div>

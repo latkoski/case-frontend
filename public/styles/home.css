@@ -329,7 +329,7 @@
   .contact-text {
     padding-left: 18px;
     width: 90%;
-    font-size: 7.3vh;
+    font-size: 5.7vh;
     padding-left: 5px;
   }
   .contact-left-side {
@@ -427,7 +427,6 @@
     background-color: #f3f6f6;
     text-align: center;
     margin: 0 -120px;
-    /* margin-right: -100px; */
     margin-left: -100%;
     padding-left: 75%;
     margin-right: -35%;
