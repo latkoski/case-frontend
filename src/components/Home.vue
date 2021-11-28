@@ -211,14 +211,6 @@ export default {
     },
   },
 
-  mounted() {},
-
-  methods: {
-    // applyFilters(val) {
-    //   console.log("work filter", val);
-    // },
-  },
-
   computed: {
     filterFirstSectionPosts: function () {
       let posts = [];
