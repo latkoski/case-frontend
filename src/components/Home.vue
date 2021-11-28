@@ -2,10 +2,9 @@
   <div class="app-container">
     <div class="row first-section-row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pb-60">
-        <div class="position-relative float-left d-inline">
+        <div class="position-relative float-left d-inline buttons-container">
           <button class="displayButton" @click="setDisplayType('grid')" id="grid">Grid</button>
           <button class="displayButton" @click="setDisplayType('list')" id="list">List</button>
-          <!-- {{displayType}} -->
         </div>
         <div class="position-relative float-right dropdown-container">
           <span class="firstDropdown">
