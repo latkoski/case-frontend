@@ -4,7 +4,7 @@
     <div id="desktop-header" class="desktop-header-img position-relative">
       <div class="overflow-hidden desktop-navigation">
         <div class="float-left position-relative top-13">
-          <img src="/icons/icon-dept.svg" class="desktop-header-logo" />
+          <img src="icons/icon-dept.svg" class="desktop-header-logo" />
         </div>
         <div
           class="float-right position-relative mt--15"
@@ -15,7 +15,7 @@
           </div>
           <img
             class="d-inline hamburger-icon cursor-pointer"
-            src="/icons/icon-menu.svg"
+            src="icons/icon-menu.svg"
           />
         </div>
         <div class="position-absolute header-text">
@@ -34,14 +34,14 @@
         <div class="navbar-fixed-top">
           <div class="mobile-navigation">
             <div class="float-left d-inline">
-              <img src="/icons/icon-dept.svg" class="header-logo-mobile" />
+              <img src="icons/icon-dept.svg" class="header-logo-mobile" />
             </div>
             <div class="float-right d-inline" @click="menuToggle = true">
               <div class="d-inline desktop-menu-label">
                 <span class="position-absolute mobile-menu-label"> MENU </span>
                 <img
                   class="d-inline mobile-menu-bar-hamburger"
-                  src="/icons/icon-menu.svg"
+                  src="icons/icon-menu.svg"
                 />
               </div>
             </div>

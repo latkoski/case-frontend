@@ -2,7 +2,7 @@
   <div class="position-relative footer-container">
     <div class="w-100 menu-container-footer">
       <div class="footer-logo position-relative d-inline float-left">
-        <img src="/icons/icon-dept.svg" class="footer-logo-dept" alt="Dept" />
+        <img src="icons/icon-dept.svg" class="footer-logo-dept" alt="Dept" />
       </div>
 
       <div class="categories">
@@ -12,7 +12,7 @@
 
             <img
               class="social-media-icon-mobile position-relative float-right"
-              src="/icons/icon-fb.svg"
+              src="icons/icon-fb.svg"
             />
           </li>
           <li class="footer-category">
@@ -20,14 +20,14 @@
 
             <img
               class="social-media-icon-mobile position-relative float-right"
-              src="/icons/icon-twitter.svg"
+              src="icons/icon-twitter.svg"
             />
           </li>
           <li class="footer-category">
             <a href="#" class="color-white">STORIES</a>
             <img
               class="social-media-icon-mobile position-relative float-right"
-              src="/icons/icon-instagram.svg"
+              src="icons/icon-instagram.svg"
             />
           </li>
           <li class="footer-category"><a href="#" class="color-white">ABOUT</a></li>
@@ -39,13 +39,13 @@
         class="footer-logo position-relative float-right social-media-container"
       >
         <a href="#" class="no-link text-decoration-none">
-          <img class="social-media-icon" src="/icons/icon-fb.svg" />
+          <img class="social-media-icon" src="icons/icon-fb.svg" />
         </a>
         <a href="#" class="text-decoration-none">
-          <img class="social-media-icon" src="/icons/icon-twitter.svg" />
+          <img class="social-media-icon" src="icons/icon-twitter.svg" />
         </a>
         <a href="#" class="text-decoration-none">
-          <img class="social-media-icon" src="/icons/icon-instagram.svg" />
+          <img class="social-media-icon" src="icons/icon-instagram.svg" />
         </a>
       </div>
       <hr class="footer-divider" />
