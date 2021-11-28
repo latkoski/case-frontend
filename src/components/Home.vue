@@ -2,6 +2,11 @@
   <div class="app-container">
     <div class="row first-section-row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pb-60">
+        <div class="position-relative float-left d-inline">
+          <button class="displayButton" @click="setDisplayType('grid')" id="grid">Grid</button>
+          <button class="displayButton" @click="setDisplayType('list')" id="list">List</button>
+          <!-- {{displayType}} -->
+        </div>
         <div class="position-relative float-right dropdown-container">
           <span class="firstDropdown">
             Show me
@@ -17,7 +22,7 @@
         </div>
       </div>
       <div
-        class="col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding"
+        :class="displayType == 'grid' ? 'col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding' : 'col-xs-12 col-sm-12 col-md-12 col-lg-12'"
         v-for="(post, index) in filterFirstSectionPosts"
         :key="index"
       >
@@ -155,7 +160,6 @@
 </template>
 
 <script>
-
 export default {
   components: {
     post: () => import("./Post.vue"),
@@ -166,6 +170,7 @@ export default {
 
   data() {
     return {
+      displayType: "grid",
       work: [
         {
           label: "all work",
@@ -204,6 +209,12 @@ export default {
     posts: {
       type: Array,
       required: true,
+    },
+  },
+
+  methods: {
+    setDisplayType(type) {
+      this.displayType = type;
     },
   },
 
@@ -253,7 +264,7 @@ export default {
     },
     sixthSectionPosts: function () {
       return this.posts.filter((post) => post.section == 6);
-    },
+    }
   },
 
   watch: {

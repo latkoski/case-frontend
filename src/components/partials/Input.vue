@@ -1,6 +1,6 @@
 <template>
   <section>
-    <label class="position-absolute input-label" :for="id">{{ label }}</label>
+    <label class="position-absolute input-label" :for="label">{{ label }}</label>
     <textarea
       :id="label"
       v-if="type == 'textarea'"

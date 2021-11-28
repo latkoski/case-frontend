@@ -44,3 +44,18 @@ a:-webkit-any-link {
     padding: 0;
   }
 }
+
+.displayButton {
+  cursor: pointer;
+  color: #fff;
+  border: 0 !important;
+  background-color: #000;
+  padding: 10px 30px;
+  margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+  .buttons-container {
+    display: none;
+  }
+}
