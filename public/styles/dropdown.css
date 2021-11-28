@@ -1,33 +1,29 @@
-
-
-
 @media (max-width: 450px) {
-    .dropdown-container {
-      font-family: "Teko";
-      font-size: 3vh;
-      color: #a3a3a3;
-    }
-  
-    .dropdown-custom {
-      width: auto;
-      height: 39px;
-      border: 0px;
-      background-color: #fff;
-      color: #000;
-    }
-
-
-    .firstDropdown {
-        width: 100%;
-        display: block;
-    }
-
-    .secondDropdown {
-        width: 100%;
-        display: block;
-    }
+  .dropdown-container {
+    font-family: "Teko";
+    font-size: 3vh;
+    color: #a3a3a3;
   }
-  
+
+  .dropdown-custom {
+    width: auto;
+    height: 39px;
+    border: 0px;
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid #000;
+  }
+
+  .firstDropdown {
+    width: 100%;
+    display: block;
+  }
+
+  .secondDropdown {
+    width: 100%;
+    display: block;
+  }
+}
 
 @media (min-width: 450px) {
   .dropdown-container {
@@ -42,5 +38,10 @@
     border: 0px;
     background-color: #fff;
     color: #000;
+    border-bottom: 1px solid #000;
+  }
+
+  .firstDropdown {
+      margin-right: 20px;
   }
 }

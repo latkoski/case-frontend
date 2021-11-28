@@ -30,17 +30,5 @@ export default {
 </script>
 
 <style>
-.dropdown-container {
-  font-family: "Teko";
-  font-size: 3vh;
-  color: #a3a3a3;
-}
 
-.dropdown-custom {
-  width: auto;
-  height: 39px;
-  border: 0px;
-  background-color: #fff;
-  color: #000;
-}
 </style>

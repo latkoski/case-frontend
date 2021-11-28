@@ -23,6 +23,10 @@
   padding-top: 145px;
 }
 
+.pb-60 {
+  padding-bottom: 60px;
+}
+
 @media (max-width: 300px) {
   .app-container {
     padding: 0

@@ -14,6 +14,8 @@ import "../public/styles/menu.css";
 import "../public/styles/post.css";
 import "../public/styles/home.css";
 import "../public/styles/footer.css";
+import "../public/styles/dropdown.css";
+
 Vue.use(VueAxios, axios);
 
 Vue.config.productionTip = false;
