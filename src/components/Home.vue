@@ -3,14 +3,17 @@
     <div class="row first-section-row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="position-relative float-right dropdown-container">
-          Show me
-          <Dropdown v-model="workFilter" name="work" :options="work" />
-          in
-          <Dropdown
-            v-model="industryFilter"
-            name="industry"
-            :options="industries"
-          />
+          <span class="firstDropdown">
+            Show me
+            <Dropdown v-model="workFilter" name="work" :options="work" />
+          </span>
+          <span class="secondDropdown">
+            in
+            <Dropdown
+              v-model="industryFilter"
+              name="industry"
+              :options="industries"
+          /></span>
         </div>
       </div>
       <div
