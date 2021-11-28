@@ -5,11 +5,11 @@
         <div class="position-relative float-right dropdown-container">
           <span class="firstDropdown">
             Show me
-            <Dropdown v-model="workFilter" name="work" :options="work" />
+            <dropdown v-model="workFilter" name="work" :options="work" />
           </span>
           <span class="secondDropdown">
             in
-            <Dropdown
+            <dropdown
               v-model="industryFilter"
               name="industry"
               :options="industries"
@@ -21,21 +21,21 @@
         v-for="(post, index) in filterFirstSectionPosts"
         :key="index"
       >
-        <Post :content="post" />
+        <post :content="post" />
       </div>
     </div>
     <!-- First section -->
     <div class="desktop-section">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 post-padding">
-          <Post
+          <post
             :content="secondSectionBigPost"
             :bigPost="true"
             :showImage="true"
           />
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 post-padding">
-          <Post
+          <post
             v-for="(post, index) in secondSectionSmallPosts"
             :content="post"
             :key="index"
@@ -47,16 +47,16 @@
     <div class="mobile-section">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 post-padding">
-          <Post
+          <post
             v-for="(post, index) in secondSectionSmallPosts"
             :key="index"
             :content="post"
             :showImage="false"
           />
-          <Post :showImage="false" />
+          <post :showImage="false" />
         </div>
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 post-padding">
-          <Post
+          <post
             :content="secondSectionBigPost"
             :bigPost="true"
             :showImage="true"
@@ -71,14 +71,14 @@
         :key="index"
         class="col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding"
       >
-        <Post :content="post" />
+        <post :content="post" />
       </div>
     </div>
     <!-- Second section -->
     <div class="mobile-section">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 post-padding">
-          <Post
+          <post
             v-for="(post, index) in fourthSectionSmallPosts"
             :content="post"
             :key="index"
@@ -92,7 +92,7 @@
             second-section-big-post
           "
         >
-          <Post
+          <post
             :content="fourthSectionBigPost"
             :bigPost="true"
             :showImage="false"
@@ -103,7 +103,7 @@
     <div class="desktop-section">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 post-padding">
-          <Post
+          <post
             v-for="(post, index) in fourthSectionSmallPosts"
             :content="post"
             :key="index"
@@ -111,7 +111,7 @@
           />
         </div>
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 post-padding">
-          <Post
+          <post
             :content="fourthSectionBigPost"
             :bigPost="true"
             :showImage="true"
@@ -125,7 +125,7 @@
         v-for="(post, index) in fifthSectionPosts"
         :key="index"
       >
-        <Post :content="post" />
+        <post :content="post" />
       </div>
     </div>
 
@@ -146,26 +146,22 @@
         v-for="(post, index) in sixthSectionPosts"
         :key="index"
       >
-        <Post :content="post" />
+        <post :content="post" />
       </div>
     </div>
-    <Clients />
-    <Contact />
+    <clients />
+    <contact />
   </div>
 </template>
 
 <script>
-import Post from "./Post.vue";
-import Clients from "./Clients.vue";
-import Contact from "./Contact.vue";
-import Dropdown from "./partials/Dropdown.vue";
 
 export default {
   components: {
-    Post,
-    Clients,
-    Contact,
-    Dropdown,
+    post: () => import("./Post.vue"),
+    clients: () => import("./Clients.vue"),
+    contact: () => import("./Contact.vue"),
+    dropdown: () => import("./partials/Dropdown.vue"),
   },
 
   data() {
