@@ -3,17 +3,35 @@
     <div class="row first-section-row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pb-60">
         <div class="position-relative float-left d-inline buttons-container">
-          <button class="displayButton" @click="setDisplayType('grid')" id="grid">Grid</button>
-          <button class="displayButton" @click="setDisplayType('list')" id="list">List</button>
+          <button
+            class="displayButton"
+            @click="setDisplayType('grid')"
+            id="grid"
+          >
+            Grid
+          </button>
+          <button
+            class="displayButton"
+            @click="setDisplayType('list')"
+            id="list"
+          >
+            List
+          </button>
         </div>
         <div class="position-relative float-right dropdown-container">
           <span class="firstDropdown">
             Show me
-            <dropdown v-model="workFilter" name="work" :options="work" />
+            <dropdown
+              @input="filterPostsByDropdown"
+              v-model="workFilter"
+              name="work"
+              :options="work"
+            />
           </span>
           <span class="secondDropdown">
             in
             <dropdown
+              @input="filterPostsByDropdown"
               v-model="industryFilter"
               name="industry"
               :options="industries"
@@ -21,8 +39,12 @@
         </div>
       </div>
       <div
-        :class="displayType == 'grid' ? 'col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding' : 'col-xs-12 col-sm-8 col-md-8 col-lg-8 margin-auto'"
-        v-for="(post, index) in filterFirstSectionPosts"
+        :class="
+          displayType == 'grid'
+            ? 'col-xs-12 col-sm-12 col-md-6 col-lg-6 post-padding'
+            : 'col-xs-12 col-sm-8 col-md-8 col-lg-8 margin-auto'
+        "
+        v-for="(post, index) in firstSectionPosts"
         :key="index"
       >
         <post :content="post" />
@@ -33,14 +55,16 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 post-padding">
           <post
-            :content="secondSectionBigPost"
+            :content="secondSectionPosts.find((post) => post.big == true)"
             :bigPost="true"
             :showImage="true"
           />
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 post-padding">
           <post
-            v-for="(post, index) in secondSectionSmallPosts"
+            v-for="(post, index) in secondSectionPosts.filter(
+              (p) => p.big == false
+            )"
             :content="post"
             :key="index"
             :showImage="false"
@@ -52,7 +76,9 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 post-padding">
           <post
-            v-for="(post, index) in secondSectionSmallPosts"
+            v-for="(post, index) in secondSectionPosts.filter(
+              (p) => p.big == false
+            )"
             :key="index"
             :content="post"
             :showImage="false"
@@ -61,7 +87,7 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 post-padding">
           <post
-            :content="secondSectionBigPost"
+            :content="secondSectionPosts.find((post) => post.big == true)"
             :bigPost="true"
             :showImage="true"
           />
@@ -83,7 +109,9 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 post-padding">
           <post
-            v-for="(post, index) in fourthSectionSmallPosts"
+            v-for="(post, index) in fourthSectionPosts.filter(
+              (p) => p.big == false
+            )"
             :content="post"
             :key="index"
             :showImage="false"
@@ -97,7 +125,7 @@
           "
         >
           <post
-            :content="fourthSectionBigPost"
+            :content="fourthSectionPosts.find((post) => post.big == true)"
             :bigPost="true"
             :showImage="false"
           />
@@ -108,7 +136,9 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 post-padding">
           <post
-            v-for="(post, index) in fourthSectionSmallPosts"
+            v-for="(post, index) in fourthSectionPosts.filter(
+              (p) => p.big == false
+            )"
             :content="post"
             :key="index"
             :showImage="false"
@@ -116,7 +146,7 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 post-padding">
           <post
-            :content="fourthSectionBigPost"
+            :content="fourthSectionPosts.find((post) => post.big == true)"
             :bigPost="true"
             :showImage="true"
           />
@@ -169,6 +199,13 @@ export default {
 
   data() {
     return {
+      firstSectionPosts: [],
+      secondSectionPosts: [],
+      thirdSectionPosts: [],
+      fourthSectionPosts: [],
+      fifthSectionPosts: [],
+      sixthSectionPosts: [],
+
       displayType: "grid",
       work: [
         {
@@ -211,59 +248,48 @@ export default {
     },
   },
 
-  methods: {
-    setDisplayType(type) {
-      this.displayType = type;
-    },
+  mounted() {
+    this.firstSectionPosts = this.filterPostsBySection(1);
+    this.secondSectionPosts = this.filterPostsBySection(2);
+    this.thirdSectionPosts = this.filterPostsBySection(3);
+    this.fourthSectionPosts = this.filterPostsBySection(4);
+    this.fifthSectionPosts = this.filterPostsBySection(5);
+    this.sixthSectionPosts = this.filterPostsBySection(6);
   },
 
-  computed: {
-    filterFirstSectionPosts: function () {
-      let posts = [];
+  methods: {
+    filterPostsBySection(section) {
+      return this.posts.filter((post) => post.section == section);
+    },
+
+    filterPostsByDropdown() {
+      let firstSectionPosts = this.filterPostsBySection(1);
       if (this.workFilter == "all" && this.industryFilter == "all") {
-        posts = this.posts.filter((post) => post.section == 1);
+        this.firstSectionPosts = firstSectionPosts;
       } else {
         if (this.workFilter == "all" && this.industryFilter != "all") {
-          posts = this.posts.filter(
-            (post) => post.section == 1 && post.industry == this.industryFilter
+          firstSectionPosts = firstSectionPosts.filter(
+            (post) => post.industry == this.industryFilter
           );
         } else if (this.workFilter != "all" && this.industryFilter == "all") {
-          posts = this.posts.filter(
-            (post) => post.section == 1 && post.work == this.workFilter
+          firstSectionPosts = firstSectionPosts.filter(
+            (post) => post.work == this.workFilter
           );
         } else {
-          posts = this.posts.filter(
+          firstSectionPosts = firstSectionPosts.filter(
             (post) =>
-              post.section == 1 &&
               post.industry == this.industryFilter &&
               post.work == this.workFilter
           );
         }
       }
 
-      return posts;
+      this.firstSectionPosts = firstSectionPosts;
     },
-    secondSectionBigPost: function () {
-      return this.posts.find((post) => post.section == 2 && post.big == true);
+
+    setDisplayType(type) {
+      this.displayType = type;
     },
-    secondSectionSmallPosts: function () {
-      return this.posts.filter((post) => post.section == 2 && !post.big);
-    },
-    thirdSectionPosts: function () {
-      return this.posts.filter((post) => post.section == 3);
-    },
-    fourthSectionBigPost: function () {
-      return this.posts.find((post) => post.section == 4 && post.big == true);
-    },
-    fourthSectionSmallPosts: function () {
-      return this.posts.filter((post) => post.section == 4 && !post.big);
-    },
-    fifthSectionPosts: function () {
-      return this.posts.filter((post) => post.section == 5);
-    },
-    sixthSectionPosts: function () {
-      return this.posts.filter((post) => post.section == 6);
-    }
   },
 
   watch: {

@@ -1,11 +1,10 @@
 <template>
   <div id="app">
     <Header />
-    <Home :posts="posts" />
+    <Home :posts="posts" v-if="posts.length > 0"/>
     <Footer />
     <div
       class="position-fixed back-to-top"
-      style="right: 0; bottom: 0; bottom: 120px; z-index: 3"
       @click="scrollToTop()"
       v-show="showBackToTop"
     >
