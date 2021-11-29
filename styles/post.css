@@ -1,0 +1,98 @@
+.no-border {
+  border: none;
+}
+
+.post-subtitle {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  padding-top: 18px;
+  padding-bottom: 12px;
+  color: #939393;
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
+
+.post-view {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  color: #1a18f7;
+}
+
+.post-title {
+  font-family: Teko;
+  font-size: 30px;
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.07;
+  letter-spacing: normal;
+  color: #272727;
+  padding-bottom: 12px;
+}
+
+@media (max-width: 769px) {
+  .mobile-border {
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+  }
+
+  .mobile-border:first-child {
+    border-top: 1px solid #ddd;
+    border-radius: 0;
+  }
+  .post-title {
+    width: 300px;
+    font-family: Teko;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.07;
+    letter-spacing: normal;
+    color: #272727;
+    padding-bottom: 12px;
+  }
+
+  .post-view {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .desktop-padding {
+    margin-left: 20px;
+    height: 40%;
+    border-top: 1px solid #ddd;
+    border-radius: 0;
+  }
+
+  .desktop-padding:last-child {
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+  }
+
+  .desktop-no-image {
+    padding-left: 20px;
+    height: 40%;
+  }
+
+  .w-800 {
+    width: 800px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .no-image-font-size {
+    font-size: 2.6vh;
+  }
+}

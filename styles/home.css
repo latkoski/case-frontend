@@ -1,0 +1,520 @@
+.clients {
+  padding-bottom: 30px;
+  background-color: #f3f6f6;
+}
+
+.testimonial-text {
+  font-family: Teko;
+  font-size: 60px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 18px;
+}
+
+.client-logo {
+  text-align: center;
+}
+
+.clients-container {
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.59;
+  font-family: Arial;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+@media (max-width: 769px) {
+  .first-section-row {
+    padding-top: 70px;
+  }
+
+  .desktop-section {
+    display: block;
+  }
+
+  .mobile-section {
+    display: none;
+  }
+  .second-section-big-post {
+    display: none;
+  }
+  .app-container {
+    margin: 0 20px;
+  }
+
+  .post-padding {
+    padding-bottom: 37px;
+  }
+
+  .testimonial {
+    font-family: Teko;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #272727;
+    padding-top: 40px;
+  }
+
+  .sub-testimonial {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.31;
+    letter-spacing: normal;
+  }
+  .clients {
+    /* margin: 0 -20px; */
+  }
+
+  .third-section-row {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .client-logo {
+    width: 50%;
+  }
+
+  img.client-logo-img {
+    width: 85px;
+    padding: 0px;
+    padding-bottom: 90px;
+  }
+
+  .clients-container {
+    padding: 0px 19% 125px;
+  }
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  img.client-logo-img {
+    width: 85px;
+    padding: 0px;
+    padding-bottom: 90px;
+  }
+  .clients-container {
+    padding: 0px 31% 125px;
+  }
+}
+
+@media (min-width: 992px) {
+  img.client-logo-img {
+    width: 85px;
+    padding: 0px;
+    padding-bottom: 90px;
+  }
+
+  .clients-container {
+  }
+  .desktop-only {
+    display: block;
+  }
+}
+
+.solid-gray {
+  color: solid #ddd;
+}
+
+@media (min-width: 769px) {
+  .clients {
+    background-color: #f3f6f6;
+    text-align: center;
+    margin: 0 -120px;
+    margin-right: -100px;
+  }
+
+  .first-section-row {
+    padding-top: 60px;
+  }
+
+  .second-section-row {
+    padding-top: 0;
+  }
+
+  .third-section-row {
+    padding-top: 80px;
+  }
+
+  .desktop-section {
+    display: block;
+  }
+
+  .mobile-section {
+    display: none;
+  }
+  .second-section-big-post {
+    display: block;
+  }
+  .app-container {
+    margin: 0 120px;
+  }
+  .post-padding {
+    padding-bottom: 80px;
+  }
+
+  .testimonial {
+    margin: 0 0 18px;
+    font-family: Teko;
+    font-size: 4.05vh;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.28;
+    letter-spacing: normal;
+    /* width: 760px; */
+    /* margin-left: 190px; */
+    padding-top: 80px;
+  }
+
+  .sub-testimonial {
+    font-family: Arial;
+    font-size: 1.4vh;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.31;
+    letter-spacing: normal;
+  }
+}
+
+/* CLIENTS MOBILE */
+
+.form-button {
+  padding: 8px 12px;
+  color: #fff;
+  background-color: #1a18f7;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: center;
+  width: 140px;
+  height: 50px;
+  position: absolute;
+  border: none;
+}
+
+/* CLIENTS */
+@media (max-width: 575.98px) {
+  .clients-header {
+    font-size: 30px;
+  }
+
+  .testimonial-text {
+    font-family: Teko;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 18px;
+  }
+  .clients-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 59px;
+  }
+
+  img.client-logo-img {
+    width: 115px;
+    padding-bottom: 90px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .logos-grid {
+    margin-bottom: -80px;
+  }
+
+  .contact-text {
+    width: 100%;
+    font-size: 3.7vh;
+    text-align: center;
+    padding-top: 90px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .contact-text {
+    margin-top: 100px;
+    margin-left: -60px;
+  }
+}
+
+/* Contact */
+
+@media (min-width: 768px) {
+  .contact-right-side {
+    padding-top: 165px;
+    padding-left: 60px;
+  }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 992px) {
+  .contact-left-side {
+    font-family: Teko;
+    font-size: 60px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    margin-top: -20px;
+  }
+
+  .h-600 {
+    height: 600px;
+    margin-top: -30px;
+  }
+
+  .input-field {
+    margin-top: -81px;
+  }
+
+  .contact-right-side {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+
+  .message-height {
+    height: 200px;
+  }
+
+  /* .contact-text {
+    padding-left: 18px;
+    width: 90%;
+    font-size: 7.3vh;
+    padding-left: 5px;
+  } */
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .contact-text {
+    width: 100%;
+    font-size: 5.7vh;
+    /* padding-left: 6px; */
+    text-align: center;
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
+  .contact-left-side {
+    font-family: Teko;
+    font-size: 60px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    padding-top: 82px;
+    width: 100%;
+  }
+
+  .contact-right-side {
+    width: 100%;
+  }
+
+  .contact-text {
+    text-align: left;
+    padding-left: 80px;
+  }
+
+  .h-600 {
+    height: 750px;
+    margin-top: -150px;
+}
+}
+
+@media (min-width: 992px) {
+  .contact-text {
+    padding-left: 18px;
+    width: 90%;
+    font-size: 5.7vh;
+    padding-left: 5px;
+  }
+  .contact-left-side {
+    font-family: Teko;
+    font-size: 60px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    padding-top: 82px;
+  }
+
+  .input-field {
+    margin-top: -81px;
+  }
+
+  .message-height {
+    height: 140px;
+    margin-top: -60px;
+  }
+  .form-button-padding {
+    margin-top: 18px;
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 768px) {
+  .desktop-section {
+    width: 95%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .app-container {
+    padding: 0 15%;
+  }
+  .desktop-navigation {
+    border-bottom: 1px solid #000;
+    margin: 0 21.5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    z-index: 6;
+  }
+  .header-text {
+    top: 192px;
+    font-family: Teko;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    left: 21.5%;
+    font-size: 28vw;
+  }
+  .header-button {
+    width: 170px;
+    z-index: 2;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 0;
+    right: 21.5%;
+    bottom: 80px;
+    border: none;
+    font-family: "Arial";
+  }
+  .menu-padding {
+    padding: 45px 21.5%;
+  }
+  .language-container {
+    color: white;
+    font-family: Arial;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    top: 100px;
+    font-style: normal;
+    line-height: 1.58;
+    letter-spacing: normal;
+    background-color: #0e0e0e;
+    width: 100px;
+    margin-left: 21.5%;
+    z-index: 5;
+  }
+
+  .clients {
+    background-color: #f3f6f6;
+    text-align: center;
+    margin: 0 -120px;
+    margin-left: -100%;
+    padding-left: 75%;
+    margin-right: -35%;
+  }
+
+  .overlay-content {
+    position: relative;
+    width: 100%;
+    padding-left: 21.5%;
+    padding-right: 21.5%;
+    text-align: center;
+    top: 147px;
+    margin: 0;
+  }
+
+  .social-list {
+    list-style: none;
+    padding: 0px;
+    bottom: 0;
+    color: white;
+    font-family: Arial;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.58;
+    letter-spacing: normal;
+    background-color: #0e0e0e;
+    width: 90px;
+    height: 120px;
+    margin-bottom: 0;
+    margin-left: 21.5%;
+    z-index: 5;
+    padding-top: 30px;
+  }
+
+  .footer-container {
+    background-color: #0e0e0e;
+    height: 340px;
+    padding: 105px 120px 0px;
+    padding-right: 120px;
+    margin-right: 120px;
+    padding-left: 21.5%;
+  }
+
+  .header-text {
+    top: 20.5%;
+    font-family: Teko;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    left: 21.5%;
+    font-size: 20vw;
+  }
+}
+
+.success-label {
+  color: #408140;
+  padding-top: 50px;
+}
